@@ -69,23 +69,23 @@ Complete the following tasks and assign the results to the specified variables. 
 let inputString = "  Welcome to the Coding Bootcamp! Learn JavaScript today.  ";
 
 // 1. Searching
-let hasJavaScript; // Your code here
-let codingPosition; // Your code here
-let startsWithWelcome; // Your code here
-let endsWithToday; // Your code here
+let hasJavaScript = inputString.includes("JavaScript"); // Check if "JavaScript" is in the string
+let codingPosition = inputString.indexOf("Coding"); // Find the position of the word "Coding"
+let startsWithWelcome = inputString.startsWith("Welcome"); // Check if the string starts with "Welcome"
+let endsWithToday = inputString.endsWith("today."); // Check if the string ends with "today."
 
 // 2. Transforming
-let lowercaseString; // Your code here
-let uppercaseString; // Your code here
-let trimmedString; // Your code here
-let replacedString; // Your code here
+let lowercaseString = inputString.toLowerCase(); // Convert the string to all lowercase letters
+let uppercaseString = inputString.toUpperCase(); // Convert the string to all uppercase letters
+let trimmedString = inputString.trim(); // Remove extra spaces from the beginning and end of the string
+let replacedString = trimmedString.replace("JavaScript", "coding"); // Replace "JavaScript" with "coding"
 
 // 3. Breaking Apart
-let wordsArray; // Your code here
+let wordsArray = trimmedString.split(" "); // Split the string into an array of words
 
 // 4. Retrieving
-let firstCharacter; // Your code here
-let extractedBootcamp; // Your code here
+let firstCharacter = trimmedString.charAt(0); // Retrieve the first character of the trimmed string
+let extractedBootcamp = trimmedString.slice(trimmedString.indexOf("Bootcamp"), trimmedString.indexOf("Bootcamp") + "Bootcamp".length); // Extract the word "Bootcamp" from the string from the index of the first letter through the length of the word.
 
 // Log all results
 console.log({
